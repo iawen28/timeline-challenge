@@ -1,0 +1,65 @@
+#bar {
+  background-color: #c6c6c6;
+  height: 11px;
+  margin-top: 50px;
+  width: 100%;
+  border: solid 1px #b7b7b7;
+}
+
+#bottom {
+  height: 20px;
+  position: absolute;
+  margin-top: -7px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#top {
+  height: 20px;
+  margin-top: -12px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+.homeEvent {
+  background-color: #23a79e;
+  width: 11px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.awayEvent {
+  background-color: #d03735;
+  width: 11px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.awayEventGroup {
+  background-color: #d03735;
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  border-radius: 2px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  line-height: 14px;
+  font-size: 13px;
+}
+
+.homeEventGroup {
+  background-color: #23a79e;
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  border-radius: 2px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  line-height: 14px;
+  font-size: 13px;
+}
