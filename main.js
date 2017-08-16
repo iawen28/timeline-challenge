@@ -10,10 +10,12 @@ let awayEvents = [],
 
 function init(lengthOfPeriodInSeconds) {
   totalTime = lengthOfPeriodInSeconds;
-  setTimeout(moveEls, 0);
 }
 
 function addAction(timeInSeconds, team) {
+  if (timeInSeconds > totalTime) {
+    return 'Out of range';
+  }
   const marker = document.createElement('DIV');
   if (team.toUpperCase() === 'AWAY') {
     // away red dot marker
@@ -32,8 +34,9 @@ function addAction(timeInSeconds, team) {
     topRow.appendChild(marker);
     saveVals(homeEvents, id, timeInSeconds);
   } else {
-    return 'Invalid input';
+    return 'Unrecognized team';
   }
+  moveEls();
 }
 
 window.init = init
