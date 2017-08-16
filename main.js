@@ -10,6 +10,15 @@ let awayEvents = [],
 
 function init(lengthOfPeriodInSeconds) {
   totalTime = lengthOfPeriodInSeconds;
+  // clear any previous data on timeline
+  while (topRow.hasChildNodes()) {
+    topRow.removeChild(topRow.lastChild);
+  }
+  while (bottomRow.hasChildNodes()) {
+    bottomRow.removeChild(bottomRow.lastChild);
+  }
+  awayEvents = [];
+  homeEvents = [];
 }
 
 function addAction(timeInSeconds, team) {
@@ -138,13 +147,13 @@ function moveEls() {
 
 })();
 
-// init(100);
-// addAction(21, 'HOME');
-// addAction(98, 'HOME');
-// addAction(100, 'HOME');
-// addAction(13, 'AWAY');
-// addAction(16, 'AWAY');
-// addAction(19, 'AWAY');
-// addAction(22, 'AWAY');
-// addAction(25, 'AWAY');
-// addAction(28, 'AWAY');
+init(100);
+addAction(21, 'HOME');
+addAction(98, 'HOME');
+addAction(100, 'HOME');
+addAction(13, 'AWAY');
+addAction(16, 'AWAY');
+addAction(19, 'AWAY');
+addAction(22, 'AWAY');
+addAction(25, 'AWAY');
+addAction(28, 'AWAY');
